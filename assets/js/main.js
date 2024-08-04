@@ -96,7 +96,7 @@
 				})();
 
 	// Smooth scroll.
-		$('.smooth-scroll').scrolly();
+		$('.smooth-scroll').scrolly({scrollyOffsetTop: '20px'});
 		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
 
 	// Wrapper.
@@ -339,3 +339,45 @@
 						});
 
 })(jQuery);
+
+const navSlide = () => {
+	const burger = document.querySelector(".burger");
+	const nav = document.querySelector(".nav-links");
+	const navLinksLi = document.querySelectorAll(".nav-links li");
+	const navLinksA = document.querySelectorAll(".nav-links a");
+  
+	burger.addEventListener("click", () => {
+	  // Toggle Nav
+	  nav.classList.toggle("nav-active");
+  
+	  // Animate Links
+	  navLinksLi.forEach((link, index) => {
+		if (link.style.animation) {
+		  link.style.animation = "";
+		} else {
+		  link.style.animation = `navLinkFade 0.5s ease forwards ${index / 15 +
+			0.5}s`;
+		}
+	  });
+	  // Burger Animation
+	  burger.classList.toggle("toggle");
+	});
+  
+	navLinksA.forEach(link =>
+	  link.addEventListener("click", () => {
+		if (nav.classList.contains("nav-active")) {
+		  // Close Navbar when Anchor tags are clicked
+		  nav.classList.remove("nav-active");
+  
+		  burger.classList.toggle("toggle");
+  
+		  // Remove Style for each link
+		  navLinksLi.forEach(link => {
+			link.style.animation = "";
+		  });
+		}
+	  })
+	);
+};
+  
+navSlide();

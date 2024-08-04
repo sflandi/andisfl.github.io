@@ -1,137 +1,313 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-	<title>Andi Saiful . Full Stack Developer</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Andi Saiful . Full Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        nav {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            height: 70px;
+            background: white;
+            position: fixed;
+            width: 100%;
+            max-width: 100vw;
+            z-index: 10000;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        nav ul {
+            margin: 0;
+        }
+        nav ul li {
+            list-style-type: none;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 600px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+        .nav-links a:after {
+            bottom: 0;
+            content: "";
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            background: #00a8ff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        .nav-links a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
 </head>
+
 <body class="is-preload">
     <div id="wrapper" class="divided">
-        <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#portfolio" class="smooth-scroll" data-scrolly-offset-top="300px">Portfolio</a></li>
+                <li><a href="#experience" class="smooth-scroll" data-scrolly-offset-top="300px">Experience</a></li>
+                <li><a href="#skill" class="smooth-scroll" data-scrolly-offset-top="300px">Skill</a></li>
+                <li><a href="#resume" class="smooth-scroll" data-scrolly-offset-top="300px">Resume</a></li>
+                <!-- <li><a href="https://github.com/sflandi" target="_blank">Github</a></li> -->
+                <li><a href="https://www.linkedin.com/in/andi-saiful-84b225111/" target="_blank">LinkedIn</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <section
+            class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
             <div class="content">
-                <h1>Andi Saiful</h1>                    
-                <blockquote>Enthusiastic Full Stack Developer and Data Analist eager to contribute to team success through hard work, attention detail and excellent organizational skills. Motivated to learn, grow, and excel in industry technology.</blockquote>
+                <h2 class="mb-0">Hi, My name is</h2>
+                <h1 class="mb-0"><b>Andi Saiful</b></h1>
+                <h2 class="mb-0">I'm a full stack developer.</h2>
+                <blockquote>Enthusiastic Full Stack Developer experience, and a passion for creating efficient and
+                    scalable applications, I am confident in my ability to contribute effectively to team successthrough
+                    hard work, attention to detail and excellent organizationalskills. Professional with proven
+                    troubleshooting and debugging capabilitiesfor resolving complex technical issues. Responsibility and
+                    motivation to continue learning, as well as growing and excelling in the technology industry,
+                    especially FinTech.</blockquote>
                 <ul class="actions stacked">
-                    <li><a href="#first" class="button big wide smooth-scroll-middle primary">Get Started</a></li>
+                    <li><a href="#experience" class="button big wide smooth-scroll primary">Get Started</a></li>
                 </ul>
             </div>
             <div class="image">
                 <img src="images/cover.jpg" alt="" />
             </div>
-        </section><br><br>
+        </section>
+        <!-- <br><br> -->
 
         <section class="wrapper style1 align-center">
             <div class="inner">
                 <div class="index align-left">
-                <div style="background: #E5E7EB;">
-                    <section id="first" style="background: #E5E7EB;">
+                    <section id="portfolio" style="background: #E5E7EB; padding: 30px;" data-scrolly-offset-top="20px">
                         <header>
-                            <h3>EXPERIENCE</h3>
-                        </header>
-                        <div class="content">
-                            <dl>
-                                <dt><b>IT Programmer at PT. Plaza Auto Prima, Jakarta</b><br>Since October 2018</dt>
-                                <dd>
-                                    <ul class="alt">
-                                        <li>Develop end to end using PHP programing with framework Laravel such as CRUD application.</li>
-                                        <li>Lead a project Sales Tools Application base on website and give effectiveness monitoring sales performance.</li>
-                                        <li>Reviewed code, debugged problems and corrected issues.</li>
-                                        <li>Adjusted software parameters to boost performance and incorporate new features on Microsoft Dynamics CRM.</li>
-                                        <li>Boosted network, system and data availability and integrity through preventative maintenance and upgrades.</li>
-                                        <li> Discussed project progress with customers, collected feedback on different stages and directly addressed concerns.</li>
-                                    </ul>
-                                </dd>
-                                <hr>
-                                <dt>Customer Service Certified at PT. Teknika Sarana Gardian, Jakarta<br>From September 2012 to October 2018</dt>
-                                <dd>  
-                                    <ul class="alt">
-                                        <li>Troubleshooting and repairing hardware and make sure end-user using harware running well.</li>
-                                        <li>Configuration and installation of the server operating system.</li>
-                                    </ul>
-                                </dd>
-                            </dl>    
-                        </div>
-                    </section>
-                </div>
-                    <section id="">
-                        <header>
-                            <h3>EDUCATION</h3>
-                        </header>
-                        <div class="content">
-                            <dl>
-                                <dt>Bachelor of Information Technology Nasional University, Jakarta <br>(2016-2021)</dt>
-                                <dd>GPA: 3.35/4.0</dd>
-                            </dl>
-                        </div>
-                    </section>
-                    <section id="" style="background: #E5E7EB;">
-                        <header>
-                            <h3>SKILLS</h3>
-                        </header>
-                        <div class="content">
-                            <dl>
-                                <dt>Programming</dt>
-                                <dd>
-                                    <ul class="actions">
-                                        <li><a class="button primary small">HTML5 & CSS</a></li>
-                                        <li><a class="button primary small">Javascript</a></li>
-                                        <li><a class="button primary small">PHP (Framework: Laravel)</a></li>
-                                        <li><a class="button primary small">SQL Server</a></li>
-                                        <li><a class="button primary small">Python</a></li>
-                                        <li><a class="button primary small">MATLAB</a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                    </section>
-                    <section id="">
-                        <header>
-                            <h3>FEATURED PROJECTS</h3>
+                            <h3><b>FEATURED PROJECTS</b></h3>
                         </header>
                         <div class="content">
                             <dl>
                                 <dt>Application e-Pain</dt>
                                 <dd>
-                                    <p>Sebuah aplikasi untuk mengidentifikasi penyakit berdasarkan tingkat sakit yang dirasakan pasien.</p>
-                                    <ul class="actions fit small">
-                                        <li><a class="button primary small">HTML5 & CSS</a></li>
-                                        <li><a class="button primary small">Javascript</a></li>
+                                    <p>Sebuah aplikasi untuk mengidentifikasi penyakit berdasarkan tingkat sakit yang
+                                        dirasakan pasien.</p>
+                                    <ul class="actions">
                                         <li><a class="button primary small">PHP</a></li>
+                                        <li><a class="button primary small">HTML5 & CSS</a></li>
+                                        <li><a class="button primary small">Javascript (JQuery)</a></li>
                                         <li><a class="button primary small">MySQL</a></li>
                                     </ul>
                                 </dd>
                                 <dt>Application Funneling</dt>
                                 <dd>
-                                    <p>Sebuah aplikasi untuk mempermudah team marketing dalam memanajemen dalam melakukan prospek terhadap customer.</p>
-                                    <ul class="actions fit small">
-                                        <li><a class="button primary small">HTML5 & CSS</a></li>
-                                        <li><a class="button primary small">Javascript</a></li>
+                                    <p>Sebuah aplikasi untuk mempermudah team marketing dalam memanajemen dalam
+                                        melakukan prospek terhadap customer.</p>
+                                    <ul class="actions">
                                         <li><a class="button primary small">PHP</a></li>
-                                        <li><a class="button primary small">Microsoft SQL Server</a></li>
+                                        <li><a class="button primary small">HTML5 & CSS</a></li>
+                                        <li><a class="button primary small">Javascript (JQuery)</a></li>
+                                        <li><a class="button primary small">Microsoft SQL</a></li>
                                     </ul>
                                 </dd>
                                 <dt>Application JPCB</dt>
                                 <dd>
                                     <p>Sebuah aplikasi yang membantu dalam pengontrolan schedule pekerjaan Workshop.</p>
-                                    <ul class="actions fit small">
-                                        <li><a class="button primary small">Laravel</a></li>
-                                        <li><a class="button primary small">Microsoft SQL Server</a></li>
-                                        <li><a class="button primary small">HTML5 & CSS</a></li>
-                                        <li><a class="button primary small">Javascript</a></li>
+                                    <ul class="actions">
+                                        <li><a class="button primary small">PHP (Laravel)</a></li>
+                                        <li><a class="button primary small">Javascript (JQuery)</a></li>
+                                        <li><a class="button primary small">Microsoft SQL</a></li>
                                     </ul>
                                 </dd>
                                 <dt>Application Whistle Blower</dt>
                                 <dd>
                                     <p>Sebuah aplikasi yang membantu dalam membangun budaya anti fraud.</p>
-                                    <ul class="actions fit small">
-                                        <li><a class="button primary small">Laravel</a></li>
-                                        <li><a class="button primary small">Microsoft SQL Server</a></li>
-                                        <li><a class="button primary small">HTML5 & CSS</a></li>
-                                        <li><a class="button primary small">Javascript</a></li>
+                                    <ul class="actions">
+                                        <li><a class="button primary small">PHP (Laravel)</a></li>
+                                        <li><a class="button primary small">Javascript (JQuery)</a></li>
+                                        <li><a class="button primary small">Microsoft SQL</a></li>
                                     </ul>
                                 </dd>
+                            </dl>
+                        </div>
+                    </section>
+                    <section id="experience" style="padding: 30px;" data-scrolly-offset-top="20px">
+                        <header>
+                            <h3><b>EXPERIENCE</b></h3>
+                        </header>
+                        <div class="content">
+                            <dl style="padding: 30px;">
+                                <!-- <hr> -->
+                                <dt><b>Full Stack Developer at Izidata Indonesia, Jakarta</b><br>Since Jan 2023</dt>
+                                <dd>
+                                    <ul class="alt">
+                                        <li>Develop Restful API using architecture microservice using Go Language.</li>
+                                        <li>Develop web based application using framework Laravel integrated with PostgreSQL.</li>
+                                        <li>Improved software performance by identifying and resolving bottlenecks in the code.</li>
+                                        <li>Refactored legacy codebases for improved maintainability, paving the way for easier future updates.</li>
+                                        <li>Enhanced UI/UX with intuitive interface design and responsive web applications.</li>
+                                        <li>Consistently met project deadlines by effectively managing time and prioritizing tasks according to importance.</li>
+                                        <li>Built databases and table structures for web applications.</li>
+                                        <li>Developed reusable components that significantly reduced development effort on multiple projects.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl style="background: #E5E7EB; padding: 30px;">
+                                <dt><b>Full Stack Developer at Sinergi Insani Primanet, Jakarta</b><br>Nov 2021 - Jan 2023</dt>
+                                <dd>
+                                    <ul class="alt">
+                                        <li>Integrated third-party APIs to enhance functionality and improve overall UI/UX on web platforms.</li>
+                                        <li>Develop web based application using framework Laravel integrated with MySQL.</li>
+                                        <li>Refactored legacy codebases and improved maintainability.</li>
+                                        <li>Reviewed code, debugged problems, and corrected issues.</li>
+                                        <li>Designed and developed analytical data structures.</li>
+                                        <li>Built databases and table structures for web applications.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl style="padding: 30px;">
+                                <!-- <hr> -->
+                                <dt><b>Full Stack Developer at Plaza Auto Prima, Jakarta</b><br>Oct 2018 - Nov 2021</dt>
+                                <dd>
+                                    <ul class="alt">
+                                        <li>Develop end to end using PHP programing with framework Laravel such as
+                                            CRUD application.</li>
+                                        <li>Lead a project Sales Tools Application base on website and give
+                                            effectiveness monitoring sales performance.</li>
+                                        <li>Reviewed code, debugged problems and corrected issues.</li>
+                                        <li>Adjusted software parameters to boost performance and incorporate new features on Microsoft
+                                            Dynamics CRM.</li>
+                                        <li>Boosted network, system and data availability and integrity through preventative maintenance and upgrades.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl style="background: #E5E7EB; padding: 30px;">
+                                <!-- <hr> -->
+                                <dt>Customer Service Certified at Teknika Sarana Gardian, Jakarta<br>From
+                                    September 2012 to October 2018</dt>
+                                <dd>
+                                    <ul class="alt">
+                                        <li>Troubleshooting and repairing hardware and make sure end-user using
+                                            harware running well.</li>
+                                        <li>Configuration and installation of the server operating system.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </section>
+                    <section id="skill" style="background: #E5E7EB; padding: 30px;">
+                        <header>
+                            <h3><b>TECHNICAL SKILLS</b></h3>
+                        </header>
+                        <div class="content">
+                            <dl>
+                                <dt>
+                                    <ul class="actions">
+                                        <li>
+                                            <a class="button primary small">
+                                                Go Language
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                PHP (FW: Laravel, Codeigniter)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                Javascript (FW: ReactJS)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                SQL (Microsoft SQL, MySQL, PostgreSQL)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                No-SQL (MongoDB)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                HTML5 & CSS3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                Docker
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                Redis
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                CI/CD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                Elasticsearch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="button primary small">
+                                                Versioning (GIT, GITHUB)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dt>
+                            </dl>
+                        </div>
+                    </section>
+                    <section id="resume" style="padding: 30px;">
+                        <header>
+                            <h3><b>RESUME</b></h3>
+                        </header>
+                        <div class="content">
+                            <dl>
+                                <dt>
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="assets\docs\CV Andi Saiful (FS).pdf" target="_blank" class="button primary small">
+                                                <i class="fas fa-search"></i>
+                                                View Resume
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="assets\docs\CV Andi Saiful (FS).pdf" target="_blank" download class="button primary small">
+                                                <i class="fas fa-cloud-download-alt"></i>
+                                                Download Resume
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dt>
                             </dl>
                         </div>
                     </section>
@@ -139,13 +315,31 @@
             </div>
         </section>
 
-        <footer class="wrapper style1 align-center" style="background: #E5E7EB;">
+        <footer id="contact" class="wrapper style1 align-center" style="background: #E5E7EB;">
             <div class="inner">
                 <ul class="icons">
-                    <li><a href="https://www.instagram.com/andi.sfl/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/andi-saiful-84b225111/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href=""mailto: andi.saiful3135@gmail.com"" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/andi.sfl/" class="icon brands style2 fa-instagram">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/andi-saiful-84b225111/" class="icon brands style2 fa-linkedin-in">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sflandi" class="icon brands style2 fa-github">
+                            <span class="label">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto: andi.saiful3135@gmail.com" class="icon style2 fa-envelope">
+                            <span class="label">Email</span>
+                        </a>
+                    </li>
                 </ul>
+                <div class="mt-0">© <span id="year"></span> Andi Saiful. All rights reserved.</div>
             </div>
         </footer>
     </div>
@@ -157,5 +351,11 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("year").innerHTML = year;
+    </script>
 </body>
+
 </html>
